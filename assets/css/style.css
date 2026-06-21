@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 993px){
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+.heroText h1{
+    font-size: 48px !important;
+}
+}
