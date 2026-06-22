@@ -1,0 +1,69 @@
+@media screen and (max-width: 576px) {
+    .heroText h1 {
+        font-size: 48px
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .heroImg {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroImg img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heroText h1, .heroText p{
+        max-width: 90%; 
+    }
+
+    .heroText p {
+        margin: 20px 0px;
+    }
+
+    .heroImg {
+        height: 400px;
+        width: 100%;
+    }
+
+    .heroImg img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .buttonHero{
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .heroText h1 {
+        font-size: 72px;
+    }
+
+    .heroImg {
+        display: flex;
+        height: 600px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .heroImg img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
