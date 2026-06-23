@@ -11,14 +11,14 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" />
     <title>Portfolio - Elvis Omić</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid px-4 px-md-5">
+        <div class="container-fluid paddingDesktop px-md-5">
             <a class="navbar-brand" href="#">Elvis Omić - Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,14 +37,14 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactMobile">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="hero" class="my-3 px-4 px-md-5">
+    <section id="hero" class="my-3 paddingDesktop px-md-5">
         <div class="heroText mt-lg-2">
             <h1 class="opacity-75">Lorem ipsum dolor sit amet.</h1>
             <p class="fs-6 opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum asperiores nemo
@@ -57,11 +57,62 @@
         </div>
     </section>
 
-    <section id="aboutMe" class="my-5 py-5">
-        <div class="sectionHeading mx-5 text-center">
-            <h2 class="fs-1">About Me</h2>
-            <p class="mx-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos adipisci excepturi
-                soluta
+    <section id="aboutMe" class="my-5 py-5 paddingDesktop">
+        <div class="sectionHeading mx-5 text-center ">
+            <h2 class="fs-1 opacity-75">About Me</h2>
+            <p class="mx-3 mb-5 opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                adipisci excepturi soluta
+                temporibus velit? Inventore odio libero fugit possimus</p>
+        </div>
+
+        <div class="containerBento">
+            <div class="bentoGrid">
+                <div class="bento-item">
+                    <div class="containerEDU">
+                        <div class="edu">
+                            <img loading="lazy" src="assets/img/mpk.jpg" alt="Logo of O.Š. 'Mlada Pokolenja'" class="imgEdu" />
+                            <div class="eduInfo">
+                                <h2 class="eduHead">O.Š. "Mlada Pokolenja" - Kovačica</h2>
+                                <p class="eduPar">2013-2021</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="edu">
+                            <img loading="lazy" src="assets/img/gmp.png" alt="Logo of Gimnazija Mihajlo Pupin" class="imgEdu" style="object-position: -7px 0px;" />
+                            <div class="eduInfo">
+                                <h2 class="eduHead">Gimnazija "Mihajlo Pupin" - Kovačica</h2>
+                                <p class="eduPar">2021 - 2025</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="edu">
+                            <img loading="lazy" src="assets/img/ict.png" alt="Logo of Visoka ICT" class="imgEdu" />
+                            <div class="eduInfo">
+                                <h2 class="eduHead">Visoka ICT - Beograd</h2>
+                                <p class="eduPar">2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bento-item">
+                    <h2 class="aboutHead">About me</h2>
+                    <p class="aboutPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quasi architecto amet ipsam quos quia.</p>
+                </div>
+                <div class="bento-item"></div>
+            </div>
+            <div class="bentoGrid2">
+                <div class="bento-item2"></div>
+                <div class="bento-item2"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="aboutMe" class="my-5 py-5 d-lg-none">
+        <div class="sectionHeading mx-5 text-center ">
+            <h2 class="fs-1 opacity-75">About Me</h2>
+            <p class="mx-3 mb-5 opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                adipisci excepturi soluta
                 temporibus velit? Inventore odio libero fugit possimus</p>
         </div>
 
@@ -159,69 +210,118 @@
         </div>
     </section>
 
-    <section id="projects" class="py-5 bg-prim-blue px-4">
+    <section id="projects" class="py-5 bg-prim-blue paddingDesktop">
         <div class="sectionHeading mx-5 text-center">
             <h2 class="fs-1 text-light">Projects</h2>
             <p class="text-light mx-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                 adipisci excepturi soluta</p>
         </div>
-        <div class="gridCSS">
-            <div class="projectsCard">
-                <span class="badgeCard">
-                    <span class="fa-solid fa-clock"></span>40h
-                </span>
-                <img loading="lazy" src="assets/img/PortfolioSites3.png" class="imgCard"
-                    alt="Image showing three screenshots of Lumina Thames Concept website" />
-                <div class="projectsInfo">
-                    <h5 class="cardTitle">Lumina Thames Concept</h5>
-                    <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="https://elvisomic.github.io/lumina-thames/" class="buttonCard">Go to Lumina
-                        Thames Concept</a>
+
+        <div class="containerProjects">
+            <div class="gridCSS">
+                <div class="projectsCard">
+                    <span class="badgeCard">
+                        <span class="fa-solid fa-clock"></span>40h
+                    </span>
+                    <img loading="lazy" src="assets/img/PortfolioSites3.png" class="imgCard"
+                        alt="Image showing three screenshots of Lumina Thames Concept website" />
+                    <div class="projectsInfo">
+                        <h5 class="cardTitle">Lumina Thames Concept</h5>
+                        <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="https://elvisomic.github.io/lumina-thames/" class="buttonCard">Go to Lumina
+                            Thames Concept</a>
+                    </div>
+                </div>
+
+                <div class="projectsCard">
+                    <span class="badgeCard">
+                        <span class="fa-solid fa-clock"></span>40h
+                    </span>
+                    <img loading="lazy" src="assets/img/PortfolioSites.png" class="imgCard"
+                        alt="Image showing three screenshots of Home2 Suites Concept website" />
+                    <div class="projectsInfo">
+                        <h5 class="cardTitle">Home2 Suites Concept</h5>
+                        <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="https://elvisomic.github.io/home2-suites-concept/" class="buttonCard">Go to
+                            Home2 Suites Concept</a>
+                    </div>
+                </div>
+
+                <div class="projectsCard span2">
+                    <span class="badgeCard"><span class="fa-solid fa-clock"></span>40h</span>
+                    <img loading="lazy" src="assets/img/PortfolioSites2.png" class="imgCard"
+                        alt="Image showing three screenshots of Nike - Landing Page Concept website" />
+                    <div class="projectsInfo">
+                        <h5 class="cardTitle">Nike - Landing Page Concept</h5>
+                        <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk
+                            of the
+                            card's content.</p>
+                        <a href="https://elvisomic.github.io/Nike-Concept-Landing-Page/" class="buttonCard">Go
+                            to Nike Concept</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="projectsCard">
-                <span class="badgeCard">
-                    <span class="fa-solid fa-clock"></span>40h
-                </span>
-                <img loading="lazy" src="assets/img/PortfolioSites.png" class="imgCard"
-                    alt="Image showing three screenshots of Home2 Suites Concept website" />
-                <div class="projectsInfo">
-                    <h5 class="cardTitle">Home2 Suites Concept</h5>
-                    <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="https://elvisomic.github.io/home2-suites-concept/" class="buttonCard">Go to
-                        Home2 Suites Concept</a>
-                </div>
-            </div>
-
-            <div class="projectsCard">
-                <span class="badgeCard"><span class="fa-solid fa-clock"></span>40h</span>
-                <img loading="lazy" src="assets/img/PortfolioSites2.png" class="imgCard"
-                    alt="Image showing three screenshots of Nike - Landing Page Concept website" />
-                <div class="projectsInfo">
-                    <h5 class="cardTitle">Nike - Landing Page Concept</h5>
-                    <p class="cardParagraph">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="https://elvisomic.github.io/Nike-Concept-Landing-Page/" class="buttonCard">Go
-                        to Nike Concept</a>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section id="contactMobile" class="px-4 pt-3 pb-5 bg-prim-blue">
-        <div class="sectionHeading mx-5 text-center">
+    <section id="contact" class="paddingDesktop pt-3 pb-5 bg-prim-blue">
+        <div class="formContact d-none d-lg-flex">
+            <div class="contactText">
+                <h2 class="contactHeading">Contact me!</h2>
+                <p class="contactParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                    adipisci excepturi soluta
+                    temporibus velit? Inventore odio libero fugit possimus</p>
+
+            </div>
+            <div class="containerContact">
+                <form action="index.php" method="post">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="firstName" class="form-label text-dark">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="John"
+                                aria-label="First name" required />
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label text-dark">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Doe"
+                                aria-label="Last name" required />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="emailAddressInput" class="form-label text-dark">Email address</label>
+                        <input type="email" class="form-control" id="emailAddressInput" aria-describedby="emailHelp"
+                            placeholder="example@email.com" required />
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="messageTextarea" class="form-label text-dark">Message</label>
+                        <textarea class="form-control" id="messageTextarea" rows="5" required
+                            placeholder="Your message here..."></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="privacyPolicyCheck">
+                        <label class="form-check-label text-dark" for="privacyPolicyCheck">I understand that my data
+                            will be processed</label>
+                    </div>
+                    <button type="submit" class="submitBTN">Submit</button>
+                    <button type="reset" class="clearBTN">Clear</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="sectionHeading mx-5 text-center d-lg-none">
             <h2 class="fs-1">Contact me!</h2>
             <p class="text-light mx-3 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                 adipisci excepturi soluta
                 temporibus velit? Inventore odio libero fugit possimus</p>
         </div>
-
-        <button class="buttonContact " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom">Contact</button>
+        <button class="buttonContact d-lg-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Contact</button>
 
         <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
             aria-labelledby="offcanvasBottomLabel">

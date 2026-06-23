@@ -57,11 +57,17 @@
     }
 
     .gridCSS{
-        grid-template-columns: repeat(3, );
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .span2{
+        grid-column: span 2;
+    }
+    .paddingDesktop{
+        padding: 0px 40px;
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
      #hero {
         display: flex;
         justify-content: space-between;
@@ -86,5 +92,19 @@
     .heroImg img {
         height: 100%;
         object-fit: cover;
+    }
+    .gridCSS{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+    }
+    .span2{
+        grid-column: span 1;
+    }
+    .projectsCard{
+        max-width: 450px;
+    }
+    
+    .paddingDesktop{
+        padding: 30px 160px !important;
     }
 }

@@ -21,7 +21,13 @@ p, span, div{
     --bs-offcanvas-height: 70vh !important;
 }
 
-#contactMobile {
+.form-check-input:checked{
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+#contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +90,6 @@ p, span, div{
 
 .projectsCard{
     background-color: #fff;
-    width: 100%;
     border-radius: 10px;
     position: relative;
 }
@@ -100,6 +105,7 @@ p, span, div{
     display: flex;
     align-items: center;
     gap: 5px;
+    font-weight: 600;
 }
 
 .imgCard{
@@ -115,10 +121,11 @@ p, span, div{
 .cardTitle{
     font-size: 24px;
     margin-bottom: 10px;
+    opacity: .75;
 }
 
 .cardParagraph{
-    opacity: .75;
+    opacity: .5;
 }
 
 .PDFlink{
@@ -131,5 +138,116 @@ p, span, div{
     text-decoration: underline;
     color: #000;
     font-weight: 700;
+}
 
+.containerProjects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerContact{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 450px;
+}
+
+.contactText{
+    max-width: 50%;
+}
+
+
+.submitBTN{
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: var(--primary-green);
+    margin-right: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submitBTN:hover{
+    background-color: #a5bd1e;
+    color: #fff;
+}
+
+.clearBTN{
+    border: 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--primary-green);
+    border: 1px solid var(--primary-green);
+    background-color: #fff;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.clearBTN:hover{
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+.bentoGrid{
+    display: grid;
+    grid-template-columns: 0.8fr 0.7fr 0.3fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.bento-item{
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+.bentoGrid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.bento-item2{
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.containerEDU{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.edu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
+
+.eduInfo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.eduHead{
+    font-size: 24px;
+}
+
+.imgEdu{
+    padding: 4px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #fff;
+    object-fit: cover;
 }
