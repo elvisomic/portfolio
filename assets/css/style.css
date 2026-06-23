@@ -40,6 +40,12 @@ p, span, div{
     border-radius: 10px;
     margin: 10px 0px;
     padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonHero:hover, .buttonContact:hover{
+    background-color: #a5bd1e;
+    color: #fff;
 }
 
 .buttonContact{
@@ -67,4 +73,63 @@ p, span, div{
 
 .heroImg img{
         border-radius: 10px;
+        width: 100%;
+}
+
+.gridCSS{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.projectsCard{
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.badgeCard{
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px;
+    background-color: var(--primary-green);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.imgCard{
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: 5px solid var(--primary-green);
+}
+
+.projectsInfo{
+    padding: 20px 10px 10px 10px;
+}
+
+.cardTitle{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cardParagraph{
+    opacity: .75;
+}
+
+.PDFlink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
+}
+.PDFlink a{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 700;
+
 }
