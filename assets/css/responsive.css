@@ -2,6 +2,9 @@
     .heroText h1 {
         font-size: 48px
     }
+    .paddingDesktop{
+        padding: 10px 20px;
+    }
 }
 
 @media screen and (min-width: 577px) {
@@ -9,12 +12,18 @@
         height: 500px;
         object-fit: cover;
     }
+    .paddingDesktop{
+        padding: 10px 20px;
+    }
 }
 @media screen and (min-width: 768px) {
 
     .heroImg img {
         height: 550px;
         object-fit: cover;
+    }
+    .paddingDesktop{
+        padding: 10px 40px;
     }
 }
 
@@ -71,7 +80,7 @@
      #hero {
         display: flex;
         justify-content: space-between;
-        height: 610px;
+        height: 700px;
     }
 
     .heroText{
@@ -85,13 +94,16 @@
     }
 
     .heroImg {
-        height: 600px;
+        height: 100%;
         width: 80%;
     }
 
     .heroImg img {
         height: 100%;
         object-fit: cover;
+    }
+    .buttonHero{
+        bottom: -9px;
     }
     .gridCSS{
         grid-template-columns: repeat(3, 1fr);
