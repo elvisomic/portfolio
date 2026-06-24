@@ -49,7 +49,7 @@
         margin: 20px 0px;
     }
 
-    .heroImg {
+    .heroImg{
         height: 400px;
         width: 100%;
     }
@@ -107,16 +107,22 @@
     }
     .gridCSS{
         grid-template-columns: repeat(3, 1fr);
-        gap: 100px;
     }
     .span2{
         grid-column: span 1;
     }
-    .projectsCard{
-        max-width: 450px;
-    }
     
     .paddingDesktop{
+        padding: 30px 120px !important;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .paddingDesktop{
         padding: 30px 160px !important;
+    }
+    .expText{
+        font-size: 20px;
     }
 }
