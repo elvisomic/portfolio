@@ -66,6 +66,7 @@ p, span, div{
     text-decoration: none;
     border-radius: 10px;
     margin: 10px 0px;
+    margin-top: auto;
     padding: 10px;
     transition: background-color 0.3s ease;
 }
@@ -93,6 +94,8 @@ p, span, div{
     background-color: #fff;
     border-radius: 10px;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .badgeCard{
@@ -117,6 +120,9 @@ p, span, div{
 
 .projectsInfo{
     padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .cardTitle{
@@ -319,6 +325,10 @@ p, span, div{
     gap: 20px;
 }
 
+.langHead{
+    opacity: .75;
+}
+
 .languagesIcons{
     position: relative;
     display: flex;
@@ -356,6 +366,7 @@ p, span, div{
 .footerHead{
     text-align: center;
     padding: 10px 0px;
+    font-style: italic;
 }
 
 .footerNav{

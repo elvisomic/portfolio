@@ -29,17 +29,19 @@
         display: flex;
         justify-content: space-between;
         height: 410px;
+        width: 100%;
     }
 
     .heroText{
         display: flex;
         flex-direction: column;
         height: 100%;
+        width: 50%;
         position: relative;
     }
 
     .heroText h1, .heroText p{
-        max-width: 90%; 
+        max-width: 90%;
     }
 
     .heroText p {
@@ -48,7 +50,7 @@
 
     .heroImg{
         height: 400px;
-        width: 100%;
+        width: 50%;
     }
 
     .heroImg img {
@@ -78,21 +80,16 @@
         display: flex;
         justify-content: space-between;
         height: 700px;
-    }
-
-    .heroText{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        position: relative;
+        width: 100%;
     }
     .heroText h1 {
         font-size: 72px;
+        width: 100%;
     }
 
     .heroImg {
         height: 100%;
-        width: 80%;
+        width: 50%;
     }
 
     .heroImg img {
