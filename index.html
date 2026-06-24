@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/portfolio.png" type="img/png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -341,17 +342,16 @@
         </div>
     </section>
 
-    <section id="contact" class="paddingDesktop pt-3 pb-5 bg-prim-blue">
+    <section id="contact" class="paddingDesktop bg-prim-blue">
         <div class="formContact d-none d-lg-flex">
             <div class="contactText">
                 <h2 class="contactHeading">Contact me!</h2>
                 <p class="contactParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                     adipisci excepturi soluta
                     temporibus velit? Inventore odio libero fugit possimus</p>
-
             </div>
             <div class="containerContact">
-                <form action="index.php" method="post">
+                <form action="index.php" method="post" class="contactForm">
                     <div class="row mb-3">
                         <div class="col">
                             <label for="firstName" class="form-label text-dark">First Name</label>
@@ -439,35 +439,33 @@
         </div>
     </section>
 
-    <section id="footer" class="p-3 mt-5">
-        <h3 class="fs-1 text-center mt-3 mb-5">Elvis Omić - Portfolio</h3>
-        <div class="border-top border-2 border-dark border-bottom py-3">
-            <a href="#" class="link-underline link-underline-opacity-0 fs-3 fw-bold text-dark">HOME</a>
-        </div>
-        <div class="border-2 border-dark border-bottom py-3">
-            <a href="#aboutMe" class="link-underline link-underline-opacity-0 fs-3 fw-bold text-dark">ABOUT ME</a>
-        </div>
-        <div class="border-2 border-dark border-bottom py-3">
-            <a href="#projects" class="link-underline link-underline-opacity-0 fs-3 fw-bold text-dark">PROJECTS</a>
-        </div>
+    <section id="footer" class="footer">
+        <div class="footerContainer paddingDesktop">
+                
+            <h3 class="footerHead">Elvis Omić - Portfolio</h3>
+            <ul class="footerNav">
+                <li><a href="#" class="footerNavLink">HOME</a></li>
+                <li style="border-top: 1px solid #000; border-bottom: 1px solid #000;"><a href="#aboutMe" class="footerNavLink">ABOUT ME</a></li>
+                <li><a href="#projects" class="footerNavLink">PROJECTS</a></li>
+            </ul>
+            <div class="socialLinksCont">
+                <a href="https://www.instagram.com/elvis_omic/" class="socialLink">
+                    <span class="fa-brands fa-instagram spanFont"></span>
+                </a>
+                <a href="https://github.com/elvisomic/" class="socialLink">
+                    <span class="fa-brands fa-github spanFont"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/elvis-omic/" class="socialLink">
+                    <span class="fa-brands fa-linkedin spanFont"></span>
+                </a>
+                <a href="mailto:elvis08.eo@gmail.com" class="socialLink">
+                    <span class="fa-solid fa-at spanFont"></span>
+                </a>
+            </div>
 
-        <div class="d-flex justify-content-center align-items-center pt-5 pb-3 gap-3">
-            <a href="https://www.instagram.com/elvis_omic/" class="text-dark">
-                <span class="fa-brands fa-instagram fs-1"></span>
-            </a>
-            <a href="https://github.com/elvisomic/" class="text-dark">
-                <span class="fa-brands fa-github fs-1"></span>
-            </a>
-            <a href="https://www.linkedin.com/in/elvis-omic/" class="text-dark">
-                <span class="fa-brands fa-linkedin fs-1"></span>
-            </a>
-            <a href="mailto:elvis08.eo@gmail.com" class="text-dark">
-                <span class="fa-solid fa-at fs-1"></span>
-            </a>
-        </div>
-
-        <div class="PDFlink">
-            <a href="assets/ocenjivanje.pdf">PDF</a>
+            <div class="PDFlink">
+                <a href="assets/ocenjivanje.pdf">PDF</a>
+            </div>
         </div>
     </section>
 

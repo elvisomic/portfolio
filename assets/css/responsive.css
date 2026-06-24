@@ -2,9 +2,6 @@
     .heroText h1 {
         font-size: 48px
     }
-    .paddingDesktop{
-        padding: 10px 20px;
-    }
 }
 
 @media screen and (min-width: 577px) {
